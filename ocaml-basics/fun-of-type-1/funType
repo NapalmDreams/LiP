@@ -1,1 +1,9 @@
 let f a = if a 1 > 0 then a 2 else a 4;;
+
+let f a = if a 1 > 0 then a 2 else 4;;
+
+
+(*test function*)
+f(fun x -> x+1);;
+let g x = x + 1;;
+f g;;
